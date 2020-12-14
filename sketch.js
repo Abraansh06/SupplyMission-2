@@ -34,7 +34,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.6, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 22 , {restitution:0.6, isStatic:true});
 	World.add(world, packageBody);
 	
 
@@ -44,18 +44,15 @@ function setup() {
 
 
 	 
-    l1=Bodies.rectangle(350,650,200,20, {restitution:0.5,isStatic:true});
-	//l1.shapeColor=("red");
+    l1=Bodies.rectangle(350,650,200,20, {restitution:0.5,isStatic:true})
 	World.add(world,l1);
     
 
 	l2=Bodies.rectangle(250,610,20,100, {restitution:0.5,isStatic:true});
-	//l2.shapeColor=("red");
 	World.add(world,l2);
 
 
 	l3=Bodies.rectangle(450,610,20,100, {restitution:0.5,isStatic:true});
-	//l3.shapeColor=("red");
 	World.add(world,l3);
 
 
